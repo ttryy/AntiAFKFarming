@@ -60,7 +60,7 @@ grinding:
         - "&c*Click here*"
     
     # What material should the item be? List: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
-    item_material: 'GOLD_SWORD'
+    item_material: 'IRON_AXE'
     
     # Should commands be sent if the player doesn't respond?
     respond: true
