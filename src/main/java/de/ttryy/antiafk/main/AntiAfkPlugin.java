@@ -20,15 +20,13 @@ public class AntiAfkPlugin extends JavaPlugin{
 	
 	private static @Getter AntiAfkPlugin instance;
 	
-	private @Getter
-	MenuManager menuManager;
+	private @Getter MenuManager menuManager;
 	
 	private @Getter Map<UUID, Boolean> needToRespond; 
 	
 	private @Getter FishingManager fishingManager;
 	private @Getter GrindingManager grindingManager;
-	private @Getter
-	MiningManager miningManger;
+	private @Getter MiningManager miningManger;
 	
 	@Override
 	public void onEnable() {
@@ -77,7 +75,7 @@ public class AntiAfkPlugin extends JavaPlugin{
 		}
 		
 		if(!getConfig().getBoolean("enabled")){
-			System.out.println("[EasyAntiAfk] Disabled by config!");
+			System.out.println("[AntiAFKFarming] Disabled by config!");
 			return;
 		}
 

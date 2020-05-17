@@ -8,7 +8,7 @@ public class ColorUtil {
 		try {
 			string = ChatColor.translateAlternateColorCodes('&', string);
 		} catch (Exception e) {
-			System.err.println("[EasyAntiAFK] Could not translate alternate color codes for: " + string);
+			System.err.println("[AntiAFKFarming] Could not translate alternate color codes for: " + string);
 		}
 		return string;
 	}

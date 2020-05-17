@@ -1,13 +1,14 @@
 name: AntiAFKFarming
-version: 0.2.1
-author: M4rcMonDE
-website: www.voxin-it.com
+version: 0.2.2
+author: TTRyY
+api-version: 1.13
 
-main: com.voxinit.antiafk.main.AntiAfkPlugin
+main: de.ttryy.antiafk.main.AntiAfkPlugin
 
 commands:
     antiafkfarming:
-        description: Use /aa reload to reload the configuration of EasyAntiAFK.
+        description: Use /aa reload to reload the configuration of AntiAFKFarming.
+        permission: antiafkfarming.reload
         aliases: [aa, aaf]
         usage: /<command> reload
         

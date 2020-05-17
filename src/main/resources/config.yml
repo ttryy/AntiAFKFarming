@@ -121,7 +121,7 @@ mining:
 # Here you can choose what each message should say
 messages:
     
-    # Message when someone tries to do the /easyantiafk command without permission
+    # Message when someone tries to do the /antiafkfarming command without permission
     no_permission: "&7[&6AntiAFKFarming&7] &cYou don't have permission!"
     
     # Message when someone tries a unknown subcommand
