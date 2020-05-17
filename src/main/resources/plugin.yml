@@ -1,0 +1,28 @@
+name: AntiAFKFarming
+version: 0.2.1
+author: M4rcMonDE
+website: www.voxin-it.com
+
+main: com.voxinit.antiafk.main.AntiAfkPlugin
+
+commands:
+    antiafkfarming:
+        description: Use /aa reload to reload the configuration of EasyAntiAFK.
+        aliases: [aa, aaf]
+        usage: /<command> reload
+        
+permissions:
+    antiafkfarming.*:
+        description: Allows you to do everything with the plugin AntiAFKFarming
+    antiafkfarming.bypass.*:
+        description: Allows you to bypass every AntiAFK type
+        default: false
+    antiafkfarming.bypass.fishing:
+        description: Allows you to bypass fishing anti afk
+        default: false
+    antiafkfarming.bypass.grinding:
+        description: Allows you to bypass grinding anti afk
+        default: false
+    antiafkfarming.bypass.mining:
+        description: Allows you to bypass mining anti afk
+        default: false

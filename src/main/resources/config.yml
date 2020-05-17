@@ -1,0 +1,132 @@
+#                     _   _          ______ _  ________                   _                 #
+#         /\         | | (_)   /\   |  ____| |/ /  ____|                 (_)                #
+#        /  \   _ __ | |_ _   /  \  | |__  | ' /| |__ __ _ _ __ _ __ ___  _ _ __   __ _     #
+#       / /\ \ | '_ \| __| | / /\ \ |  __| |  < |  __/ _` | '__| '_ ` _ \| | '_ \ / _` |    #
+#      / ____ \| | | | |_| |/ ____ \| |    | . \| | | (_| | |  | | | | | | | | | | (_| |    #
+#     /_/    \_\_| |_|\__|_/_/    \_\_|    |_|\_\_|  \__,_|_|  |_| |_| |_|_|_| |_|\__, |    #
+#                                                                                  __/ |    #
+#                                                                                 |___/     #
+
+# Choose to enable/disable AntiAFKFarming with true/false
+enabled: true
+
+fishing:
+    # Choose to enable/disable AntiAfkFishing
+    enabled: true
+
+    # After how many fish should the gui be triggered?
+    maxFish: 20
+    
+    # What should the gui title say?
+    inventory_title: "&e&lAntiAfkFishing"
+    
+    # What should the item displayname say?
+    item_displayname: "&cAre you there?"
+    
+    # What should the item lore say?
+    item_lore:
+        - "&c*Click here*"
+    
+    # What material should the item be? List: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+    item_material: 'FISHING_ROD'
+    
+    # Should commands be sent if the player doesn't respond?
+    respond: true
+    
+    # Should the player have to use the inventory (only if respond is set to false)
+    force_interaction: false
+    
+    # What command should be executed? !PLAYER! = Playername
+    commands: [kick !PLAYER! AFKFishing]
+        
+    # After how long should the commands be executed? (20 = 1 Second)
+    time: 200
+        
+grinding:       
+    # Choose to enable/disable AntiAfkGrinding
+    enabled: true
+
+    # After how many mobs should the gui be triggered?
+    maxMobs: 50
+    
+    # What should the gui title say?
+    inventory_title: "&e&lAntiAfkGrinding"
+    
+    # What should the item displayname say?
+    item_displayname: "&cAre you there?"
+    
+    # What should the item lore say?
+    item_lore:
+        - "&c*Click here*"
+    
+    # What material should the item be? List: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+    item_material: 'GOLD_SWORD'
+    
+    # Should commands be sent if the player doesn't respond?
+    respond: true
+    
+    # Should the player have to use the inventory (only if respond is set to false)
+    force_interaction: false
+    
+    # What command should be executed? !PLAYER! = Playername
+    commands: [kick !PLAYER! AFKGrinding]
+        
+    # After how long should the commands be executed? (20 = 1 Second)
+    time: 200
+        
+mining:        
+    # Choose to enable/disable AntiAfkMining
+    enabled: true
+
+    # After how many blocks should the gui be triggered?
+    maxBlocks: 200
+    
+    # Which blocks should count? List: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+    blockList:
+        - COBBLESTONE
+        - STONE
+        - DIAMOND_ORE
+        - IRON_ORE
+        - COAL_ORE
+        - GOLD_ORE
+        - EMERALD_ORE
+        - REDSTONE_ORE
+        - LAPIS_ORE
+    
+    # What should the gui title say?
+    inventory_title: "&e&lAntiAfkMining"
+    
+    # What should the item displayname say?
+    item_displayname: "&cAre you there?"
+    
+    # What should the item lore say?
+    item_lore:
+        - "&c*Click here*"
+    
+    # What material should the item be? List: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+    item_material: 'DIAMOND'
+    
+    # Should commands be sent if the player doesn't respond?
+    respond: true
+    
+    # Should the player have to use the inventory (only if respond is set to false)
+    force_interaction: false
+    
+    # What command should be executed? !PLAYER! = Playername
+    commands: [kick !PLAYER! AFKMining]
+        
+    # After how long should the commands be executed? (20 = 1 Second)
+    time: 200
+        
+# Here you can choose what each message should say
+messages:
+    
+    # Message when someone tries to do the /easyantiafk command without permission
+    no_permission: "&7[&6AntiAFKFarming&7] &cYou don't have permission!"
+    
+    # Message when someone tries a unknown subcommand
+    unknown_subcommand: "&7[&6AntiAFKFarming&7] &cUnknown subcommand!"
+    
+    # Message when somone successfully reloads the config
+    reload: "&7[&6AntiAFKFarming&7] &aConfig reloaded!"
+        

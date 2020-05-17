@@ -1,0 +1,56 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+	id 'com.github.johnrengelman.shadow' version '5.2.0'
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'com.destroystokyo:paperclip:1.15.2'
+
+    compileOnly 'org.projectlombok:lombok:1.18.2'
+    annotationProcessor 'org.projectlombok:lombok:1.18.2'
+
+    testImplementation 'junit:junit:4.12'
+}
+
+sourceCompatibility = '1.8'
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            from(components.java)
+
+            groupId = 'de.ttryy'
+            artifactId = 'antiafkfarming'
+            version = '0.0.1-SNAPSHOT'
+        }
+    }
+}
+
+publishing {
+	publications {
+		shadow(MavenPublication) { publication ->
+
+			project.shadow.component(publication)
+
+			groupId = 'de.ttryy'
+			artifactId = 'antiafkfarming'
+			version = '0.0.1-SNAPSHOT'
+		}
+	}
+}
+
+shadowJar {
+	classifier = ''
+}
+
+compileJava.options.encoding = 'UTF-8'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
